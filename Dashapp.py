@@ -3,7 +3,7 @@ from dash import dcc, html
 from dash.dependencies import Input, Output, State
 import pandas as pd
 import joblib
-
+const port = process.env.PORT || 4000;
 # Load the model from disk
 model = joblib.load("Project2model.sav")
 
